@@ -1,4 +1,7 @@
 /* React Kanban */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body.chakra-ui-light .react-kanban-column {
   background-color: #fff; /* Gray/Gray-100 */
   box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);

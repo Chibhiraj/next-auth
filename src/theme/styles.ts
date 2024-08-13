@@ -1,4 +1,6 @@
 import { mode } from '@chakra-ui/theme-tools';
+
+
 export const globalStyles = {
   colors: {
     brand: {

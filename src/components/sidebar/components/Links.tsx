@@ -202,7 +202,7 @@ export function SidebarLinks(props: SidebarLinksProps) {
                     activeRoute(route.path.toLowerCase()) ? '22px' : '26px'
                   }
                 >
-                  {route.name === 'Chat UI' ? (
+                  {route.name === 'Chat UI' || 'My Chats ' ? (
                     <NavLink
                       href={
                         route.layout ? route.layout + route.path : route.path

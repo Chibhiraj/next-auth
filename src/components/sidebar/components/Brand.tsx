@@ -11,7 +11,8 @@ export function SidebarBrand() {
 
   return (
     <Flex alignItems="center" flexDirection="column">
-      <HorizonLogo h="26px" w="146px" my="30px" color={logoColor} />
+      {/* <HorizonLogo h="26px" w="146px" my="30px" color={logoColor} /> */}
+      <h1 style={{padding:20}}><strong>Compass Ai</strong></h1>
       <HSeparator mb="20px" w="284px" />
     </Flex>
   );

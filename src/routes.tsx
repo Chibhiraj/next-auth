@@ -6,6 +6,9 @@ import {
   MdLayers,
   MdAutoAwesome,
   MdOutlineManageAccounts,
+  MdWorkspacePremium,
+  MdHistory,
+  MdVerified 
 } from 'react-icons/md';
 import { IoMdPerson } from 'react-icons/io';
 import { LuHistory } from 'react-icons/lu';
@@ -24,74 +27,72 @@ const routes: IRoute[] = [
     collapse: false,
   },
   {
-    name: 'All Templates',
-    disabled: true,
-    path: '/all-templates',
-    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
+    name: 'My Chats',
+    path: '/my-projects',
+    icon: <Icon as={MdHistory} width="20px" height="20px" color="inherit" />,
     collapse: false,
   },
   {
-    name: 'My Projects',
-    disabled: true,
-    path: '/my-projects',
-    icon: <Icon as={MdLayers} width="20px" height="20px" color="inherit" />,
+    name: ' My Subscriptions',
+    path: '/admin',
+    icon: <Icon as={MdWorkspacePremium } width="20px" height="20px" color="inherit" />,
     collapse: false,
   },
   // --- Others ---
-  {
-    name: 'Other Pages',
-    disabled: true,
-    path: '/others',
-    icon: <Icon as={MdFileCopy} width="20px" height="20px" color="inherit" />,
-    collapse: true,
-    items: [
-      {
-        name: 'Prompt Page',
-        layout: '/others',
-        path: '/prompt',
-      },
-      {
-        name: 'Register',
-        layout: '/others',
-        path: '/register',
-      },
-      {
-        name: 'Sign In',
-        layout: '/others',
-        path: '/sign-in',
-      },
-    ],
-  },
-  // --- Admin Pages ---
-  {
-    name: 'Admin Pages',
-    disabled: true,
-    path: '/admin',
-    icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
-    collapse: true,
-    items: [
-      {
-        name: 'All Templates',
-        layout: '/admin',
-        path: '/all-admin-templates',
-      },
-      {
-        name: 'New Template',
-        layout: '/admin',
-        path: '/new-template',
-      },
-      {
-        name: 'Edit Template',
-        layout: '/admin',
-        path: '/edit-template',
-      },
-      {
-        name: 'Users Overview',
-        layout: '/admin',
-        path: '/overview',
-      },
-    ],
-  },
+  // {
+  //   name: 'Other Subscriptions',
+  //   disabled: true,
+  //   path: '/others',
+  //   icon: <Icon as={MdVerified } width="20px" height="20px" color="inherit" />,
+  //   collapse: true,
+  //   items: [
+  //     {
+  //       name: 'Subscription 1',
+  //       layout: '/others',
+  //       path: '/prompt',
+  //     },
+  //     {
+  //       name: 'Subscription 2',
+  //       layout: '/others',
+  //       path: '/register',
+  //     },
+  //     {
+  //       name: 'Subscription 3',
+  //       layout: '/others',
+  //       path: '/sign-in',
+  //     },
+  //   ],
+  // },
+  // // --- Admin Pages ---
+  // {
+  //   name: 'Admin Pages',
+  //   disabled: false,
+  //   path: '/admin',
+  //   icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
+  //   collapse: true,
+  //   items: [
+  //     {
+  //       name: 'All Templates',
+  //       layout: '/admin',
+  //       path: '/all-admin-templates',
+  //     },
+  //     {
+  //       name: 'New Template',
+  //       layout: '/admin',
+  //       path: '/new-template',
+  //     },
+  //     {
+  //       name: 'Edit Template',
+  //       layout: '/admin',
+  //       path: '/edit-template',
+  //     },
+  //     {
+  //       name: 'Users Overview',
+  //       layout: '/admin',
+  //       path: '/overview',
+  //     },
+  //   ],
+  // },
   {
     name: 'Profile Settings',
     disabled: true,

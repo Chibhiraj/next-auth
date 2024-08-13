@@ -15,6 +15,7 @@ import '@/styles/Contact.css';
 import '@/styles/Plugins.css';
 import '@/styles/MiniCalendar.css';
 import AppWrappers from './AppWrappers';
+import './globals.css'
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();

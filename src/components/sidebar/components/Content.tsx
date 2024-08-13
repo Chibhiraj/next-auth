@@ -21,7 +21,7 @@ import { NextAvatar } from '@/components/image/Avatar';
 import APIModal from '@/components/apiModal';
 import Brand from '@/components/sidebar/components/Brand';
 import Links from '@/components/sidebar/components/Links';
-import SidebarCard from '@/components/sidebar/components/SidebarCard';
+// import SidebarCard from '@/components/sidebar/components/SidebarCard';
 import { RoundedChart } from '@/components/icons/Icons';
 import { PropsWithChildren } from 'react';
 import { IRoute } from '@/types/navigation';
@@ -71,7 +71,7 @@ function SidebarContent(props: SidebarContent) {
       </Stack>
 
       <Box mt="60px" width={'100%'} display={'flex'} justifyContent={'center'}>
-        <SidebarCard />
+        {/* <SidebarCard /> */}
       </Box>
       <APIModal setApiKey={setApiKey} sidebar={true} />
       <Flex
